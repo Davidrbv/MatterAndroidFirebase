@@ -139,6 +139,7 @@ class GaleryFragment : Fragment() {
         auth = Firebase.auth
         storage = FirebaseStorage.getInstance()
 
+        //Setter bar
         (activity as AppCompatActivity?)!!.supportActionBar!!.apply {
             title = getString(R.string.galery)
             setDisplayShowCustomEnabled(false)
