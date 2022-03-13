@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_dashboard"
+    app:startDestination="@id/panelFragment">
+
+    <!--Panel-->
+    <fragment
+        android:id="@+id/panelFragment"
+        android:name="com.example.matterandroid.principalFragments.PanelFragment"
+        android:label="fragment_panel"
+        tools:layout="@layout/fragment_panel" >
+        <action
+            android:id="@+id/action_panelFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment"/>
+        <action
+            android:id="@+id/action_panelFragment_to_invoiceFragment"
+            app:destination="@id/invoiceFragment"/>
+        <action
+            android:id="@+id/action_panelFragment_to_saleFragment"
+            app:destination="@id/saleFragment"/>
+        <action
+            android:id="@+id/action_panelFragment_to_galeryFragment"
+            app:destination="@id/galeryFragment" />
+    </fragment>
+
+    <!--Employee-->
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.example.matterandroid.principalFragments.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" >
+        <action
+            android:id="@+id/action_employeeFragment_to_editEmployeeFragment"
+            app:destination="@id/editEmployeeFragment"/>
+        <action
+            android:id="@+id/action_employeeFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment"/>
+        <action
+            android:id="@+id/action_employeeFragment_to_panelFragment"
+            app:destination="@id/panelFragment"
+            app:popUpTo="@id/panelFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <!--Invoice-->
+    <fragment
+        android:id="@+id/invoiceFragment"
+        android:name="com.example.matterandroid.principalFragments.InvoiceFragment"
+        android:label="fragment_invoice"
+        tools:layout="@layout/fragment_invoice" >
+        <action
+            android:id="@+id/action_invoiceFragment_to_editInvoiceFragment"
+            app:destination="@id/editInvoiceFragment"/>
+        <action
+            android:id="@+id/action_invoiceFragment_to_addInvoiceFragment"
+            app:destination="@id/addInvoiceFragment"/>
+        <action
+            android:id="@+id/action_invoiceFragment_to_panelFragment"
+            app:destination="@id/panelFragment"
+            app:popUpTo="@id/panelFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <!--Sale-->
+    <fragment
+        android:id="@+id/saleFragment"
+        android:name="com.example.matterandroid.principalFragments.SaleFragment"
+        android:label="fragment_sale"
+        tools:layout="@layout/fragment_sale" >
+        <action
+            android:id="@+id/action_saleFragment_to_editSaleFragment"
+            app:destination="@id/editSaleFragment"/>
+        <action
+            android:id="@+id/action_saleFragment_to_addSaleFragment"
+            app:destination="@id/addSaleFragment"/>
+        <action
+            android:id="@+id/action_saleFragment_to_panelFragment"
+            app:destination="@id/panelFragment"
+            app:popUpTo="@id/panelFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <!--Edit Employee-->
+    <fragment
+        android:id="@+id/editEmployeeFragment"
+        android:name="com.example.matterandroid.editItemFragment.EditEmployeeFragment"
+        android:label="fragment_edit_employee"
+        tools:layout="@layout/fragment_edit_employee" >
+        <action
+            android:id="@+id/action_editEmployeeFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment"/>
+        <argument
+            android:name="employee"
+            app:argType="com.example.matterandroid.entities.Employee"/>
+    </fragment>
+
+    <!--Edit Invoice-->
+    <fragment
+        android:id="@+id/editInvoiceFragment"
+        android:name="com.example.matterandroid.editItemFragment.EditInvoiceFragment"
+        android:label="fragment_edit_invoice"
+        tools:layout="@layout/fragment_edit_invoice" >
+        <action
+            android:id="@+id/action_editInvoiceFragment_to_invoiceFragment"
+            app:destination="@id/invoiceFragment"/>
+        <argument
+            android:name="invoice"
+            app:argType="com.example.matterandroid.entities.Invoice" />
+    </fragment>
+
+    <!--Edit Sale-->
+    <fragment
+        android:id="@+id/editSaleFragment"
+        android:name="com.example.matterandroid.editItemFragment.EditSaleFragment"
+        android:label="fragment_edit_sale"
+        tools:layout="@layout/fragment_edit_sale" >
+        <action
+            android:id="@+id/action_editSaleFragment_to_saleFragment"
+            app:destination="@id/saleFragment"/>
+        <argument
+            android:name="sale"
+            app:argType="com.example.matterandroid.entities.Sale" />
+    </fragment>
+
+    <!--Add Employee-->
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="com.example.matterandroid.addItemFragment.AddEmployeeFragment"
+        android:label="AddEmployeeFragment" >
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment"/>
+    </fragment>
+
+    <!--Add Invoice-->
+    <fragment
+        android:id="@+id/addInvoiceFragment"
+        android:name="com.example.matterandroid.addItemFragment.AddInvoiceFragment"
+        android:label="AddInvoiceFragment" >
+        <action
+            android:id="@+id/action_addInvoiceFragment_to_invoiceFragment"
+            app:destination="@id/invoiceFragment"/>
+    </fragment>
+
+    <!--Add Sale-->
+    <fragment
+        android:id="@+id/addSaleFragment"
+        android:name="com.example.matterandroid.addItemFragment.AddSaleFragment"
+        android:label="AddSaleFragment" >
+        <action
+            android:id="@+id/action_addSaleFragment_to_saleFragment"
+            app:destination="@id/saleFragment"/>
+    </fragment>
+
+    <!-- Galery -->
+    <fragment
+        android:id="@+id/galeryFragment"
+        android:name="com.example.matterandroid.principalFragments.GaleryFragment"
+        android:label="fragment_galery"
+        tools:layout="@layout/fragment_galery" >
+        <action
+            android:id="@+id/action_galeryFragment_to_panelFragment"
+            app:destination="@id/panelFragment"
+            app:popUpTo="@id/panelFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>

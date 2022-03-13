@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Matter</string>
+
+    <!--MAIN-->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+
+    <string name="fillFields">You must fill the fields..</string>
+    <string name="err_login">Login error, try again..</string>
+
+    <!--DASHBOARD-->
+    <string name="user_name">Welcome %1$s</string>
+    <string name="sales">Sales</string>
+    <string name="invoices">Invoices</string>
+    <string name="go">Go</string>
+    <string name="settings">Settings</string>
+
+    <!--REGISTER FRAGMENT-->
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="diferent_pass">Passwords must be equals..</string>
+    <string name="err_register">Register error.Try with other email..</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--MENU APPBAR-->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!--Module fragments-->
+    <string name="dashboard">Dashboard</string>
+    <string name="employee">Employee</string>
+    <string name="sale">Sale</string>
+    <string name="invoice">Invoice</string>
+    <string name="galery">Galery</string>
+    <string name="without">Without information..</string>
+
+    <!--Edit Fragments-->
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="salary">Salary</string>
+    <string name="genre">Genre</string>
+    <string name="correctRegisterPhoto">Photo register correctly..</string>
+    <string name="correctRegisterEmployee">Employee register correctly..</string>
+    <string name="correctModifyEmployee">Employee modify correctly..</string>
+    <string name="correctRegisterInvoice">Invoice register correctly..</string>
+    <string name="correctModifyInvoice">Invoice modify correctly..</string>
+    <string name="correctRegisterSale">Sale register correctly..</string>
+    <string name="correctModifySale">Sale modify correctly..</string>
+    <string name="correctRegisterUser">User register correctly. Login know, please.</string>
+    <string name="module">Module</string>
+    <string name="provider">Provider</string>
+    <string name="date">Date</string>
+    <string name="quantity">Quantity</string>
+    <string name="card">Card</string>
+    <string name="cash">Cash</string>
+    <string name="total">Total</string>
+    <string name="state">State</string>
+
+    <string name="editEmployee">Edit Employee</string>
+    <string name="addEmployee">Add Employee</string>
+    <string name="editInvoice">Edit Invoice</string>
+    <string name="addInvoice">Add Invoice</string>
+    <string name="editSale">Edit Sale</string>
+    <string name="addSale">Add Sale</string>
+
+    <!--App Bar Menu-->
+    <string name="exit">Exit</string>
+    <string name="deleteAccount">Delete</string>
+    <string name="deleteUser">You will go to delete your account.. :(</string>
+    <string name="confirmDeleteUser">Come back!! :(</string>
+
+    <!--UserCard-->
+    <string name="userImage">User image</string>
+    <string name="err_addImage">Upss..We have problem to up this image</string>
+    <string name="addImageOk">Its OK. You have a new photo.</string>
+    <string name="noWay">Persmissions revoked..bye bye..</string>
+    <string name="welcome">¡Welcome!</string>
+
+    <!--Delete items-->
+    <string name="deleteEmployee">Delete employee.</string>
+    <string name="deleteInvoice">Delete invoice.</string>
+    <string name="deleteSale">Delete sale.</string>
+    <string name="deletePhoto">Delete photo.</string>
+    <string name="sure">Are you sure to delete?..</string>
+    <string name="confirmDeleteEmployee">Employee was delete..</string>
+    <string name="confirmDeleteInvoice">Invoice was delete..</string>
+    <string name="confirmDeleteSale">Sale was delete..</string>
+    <string name="confirmDeletePhoto">Photo was delete..</string>
+    <string name="deleteCancel">Delete cancel..Have a nice day!</string>
+    
+    <!--Galery-->
+    <string name="location">Location</string>
+</resources>

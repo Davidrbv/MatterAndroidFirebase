@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/employeeImage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/employees"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/employeeSalary"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Salary -->
+        <TextView
+            android:id="@+id/employeeSalary"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Salary"
+            android:layout_marginStart="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            app:layout_constraintTop_toBottomOf="@id/employeeImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/employeeGenre"
+            app:drawableRightCompat="@drawable/ic_salary"/>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/employeeName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/employeeImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/employeeSurname"
+            app:drawableRightCompat="@drawable/ic_name"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:drawablePadding="10dp"/>
+
+        <!-- Surname -->
+        <TextView
+            android:id="@+id/employeeSurname"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Surname"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/employeeImage"
+            app:layout_constraintTop_toBottomOf="@id/employeeName"
+            app:layout_constraintBottom_toTopOf="@id/employeeJob"
+            app:drawableRightCompat="@drawable/ic_name"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:drawablePadding="10dp"/>
+
+        <!-- Job -->
+        <TextView
+            android:id="@+id/employeeJob"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Job"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/employeeImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/employeeGenre"
+            app:drawableRightCompat="@drawable/ic_job"
+            tools:ignore="RtlHardcoded,RtlSymmetry"
+            android:drawablePadding="10dp"/>
+
+        <!--Genre-->
+
+        <TextView
+            android:id="@+id/employeeGenre"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Genre"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:paddingEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/employeeImage"
+            app:layout_constraintTop_toBottomOf="@id/employeeJob"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:drawableRightCompat="@drawable/ic_genre"
+            tools:ignore="RtlSymmetry"
+            android:drawablePadding="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

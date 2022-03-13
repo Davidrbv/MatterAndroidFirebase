@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/panel"
+        android:icon="@drawable/dashboard_ic"
+        android:title=""
+        app:labelVisibilityMode="unlabeled"/>
+    <item
+        android:id="@+id/sale"
+        android:icon="@drawable/sale_ic"
+        android:title=""
+        app:labelVisibilityMode="unlabeled"/>
+    <item
+        android:id="@+id/invoice"
+        android:icon="@drawable/invoice_ic"
+        android:title=""
+        app:labelVisibilityMode="unlabeled" />
+    <item
+        android:id="@+id/employee"
+        android:icon="@drawable/employee_ic"
+        android:title=""
+        app:labelVisibilityMode="unlabeled" />
+
+    <item
+        android:id="@+id/galery"
+        android:icon="@drawable/ic_galery"
+        android:title=""
+        app:labelVisibilityMode="unlabeled" />
+
+</menu>
