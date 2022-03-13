@@ -3,7 +3,7 @@
 <br />
 <p align="center">
 
-  <img src="src/main/res/drawable/logo_matter.png" alt="Logo" width="200" height="250">
+  <img src="app/src/main/res/drawable/logo_matter.png" alt="Logo" width="200" height="250">
 
   <h3 align="center">Matter</h3>
   
@@ -40,14 +40,12 @@ Se hace uso de diferentes librerias para la gestión de los recursos.
 ## Technologies Used
 
 <a href="https://github.com/android">
-    <img src="src/main/res/drawable/logo_android.png" alt="Logo" width="220" height="100">
+    <img src="app/src/main/res/drawable/logo_android.png" alt="Logo" width="220" height="100">
 </a>
 
 <br>
 
 <a href="https://github.com/kotlin">
-    <img src="src/main/res/drawable/logo_kotlin.png" alt="Logo" width="220" height="100">
+    <img src="app/src/main/res/drawable/logo_kotlin.png" alt="Logo" width="220" height="100">
 </a>
 
-## Mockup App
-<img src="src/main/res/drawable/mockap.png" alt="Logo" width="220" height="100">
